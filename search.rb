@@ -21,8 +21,3 @@ doc.search('[data-testid="product__items"] [data-testid="product__item"]').each_
   puts "#{index + 1}. #{link}"
   # puts "#{index + 1}. #{element.getAttribute('href')}"
 end
-
-
-def scrape_craiglist_antiques(city)
-  # TODO: return an array of Antiques found of Craigslist for this `city`.
-end
