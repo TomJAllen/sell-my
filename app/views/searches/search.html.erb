@@ -1,0 +1,16 @@
+<h2>Your Item info</h2>
+
+<form action="/search" method="get">
+  <label for="search">Your Search:</label>
+  <input id="search" name="search" type="text" placeholder="e.g. Ralph Lauren polo" value="<%= params[:search] %>">
+
+  <input type="submit">
+
+</form>
+
+
+<ul>
+  <% @results.each do |result| %>
+  <li><%= "#{result}" %></li>
+  <% end %>
+</ul>
