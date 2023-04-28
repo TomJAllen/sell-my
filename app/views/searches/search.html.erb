@@ -10,7 +10,13 @@
 
 
 <ul>
-  <% @results.each do |result| %>
+  <% @depop_results.each do |result| %>
+  <li><%= "#{result}" %></li>
+  <% end %>
+</ul>
+
+<ul>
+  <% @swop_results.each do |result| %>
   <li><%= "#{result}" %></li>
   <% end %>
 </ul>
